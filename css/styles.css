@@ -493,6 +493,9 @@ a {
   display: block;
   margin-bottom: .6rem; }
 
+body {
+  width: 1920px; }
+
 .header {
   height: 90px;
   border-bottom: 1px solid #e4e4e4; }
@@ -677,19 +680,23 @@ a {
   text-align: center; }
   .section__title {
     font-size: 2.1rem;
-    font-weight: 500; }
+    font-weight: 500;
+    margin: 0 0 1.3rem 0; }
   .section__subtitle {
     font-weight: 600;
     font-size: 1.4rem; }
   .section__description {
     font-weight: 300;
-    font-size: 1.14rem; }
+    font-size: 1.2rem;
+    margin-bottom: 3rem; }
   .section:nth-child(odd) {
     background: #f6f6f6; }
   .section--features {
-    padding: 180px 0 80px 0; }
+    padding: 175px 0 80px 0; }
   .section--default {
-    padding: 80px 0; }
+    padding: 70px 0; }
+  .section--faq .section__title {
+    margin-bottom: 3rem; }
   .section--partners {
     padding: 40px 0; }
   .section--get-started {
@@ -750,7 +757,11 @@ a {
   -webkit-box-pack: center;
           justify-content: center;
   flex-wrap: wrap;
-  margin: 0 -10px 40px -10px; }
+  margin: 0 0 40px 0;
+  border-top: 1px solid #ededed;
+  padding-top: 1.6rem; }
+  .categories--big .categories__row {
+    margin: 0 -10px; }
   .categories--big .categories__item {
     float: left;
     padding: 0 10px; }
@@ -764,7 +775,7 @@ a {
 .categories__label, .categories__more {
   display: block;
   border-radius: 5px;
-  padding: 1.3rem;
+  padding: 0.8rem 1.3rem;
   font-size: 1.28rem;
   -webkit-user-select: none;
           user-select: none; }
@@ -858,11 +869,11 @@ a {
     border-top: 1px solid #ededed; }
     .faq__item:last-child {
       border-bottom: 1px solid #ededed; }
-  .faq__radio {
+  .faq__checkbox {
     display: none; }
-    .faq__radio:checked + label .faq__question::before {
+    .faq__checkbox:checked + label .faq__question::before {
       background-image: url(../img/minus-icon.png); }
-    .faq__radio:checked + label .faq__answer {
+    .faq__checkbox:checked + label .faq__answer {
       max-height: 80px; }
   .faq__label {
     display: block;

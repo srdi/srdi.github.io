@@ -2,6 +2,22 @@
  * Created by User on 13-Jun-17.
  */
 
+$('.faq__label').click(function(e) {
+    var checkbox = $(this).siblings('.faq__checkbox');
+    // var prevVal = radio.prop('data-prevVal');
+    // // console.log(radio);
+    // // console.log(prevVal);
+    // if(!prevVal) {
+    //     radio.prop('data-prevVal','true');
+    // }
+    // else{
+    //     console.log(radio.prop('checked'));
+    //     radio.prop('checked',false);
+    //     radio.prop('data-prevVal',false);
+    // }
+    // e.preventDefault();
+    $('.faq__checkbox').not(checkbox).prop('checked',false);
+})
 
 //Select2 config
 $('.plugin-select select').select2({
