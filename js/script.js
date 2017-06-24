@@ -1,21 +1,18 @@
 /**
  * Created by User on 13-Jun-17.
  */
+var $body = $('body');
+$('.js-menu-show').click(function() {
+    $body.addClass('mobile-nav-show');
+});
+
+$('.js-menu-hide').click(function() {
+    $body.removeClass('mobile-nav-show');
+});
+
 
 $('.faq__label').click(function(e) {
     var checkbox = $(this).siblings('.faq__checkbox');
-    // var prevVal = radio.prop('data-prevVal');
-    // // console.log(radio);
-    // // console.log(prevVal);
-    // if(!prevVal) {
-    //     radio.prop('data-prevVal','true');
-    // }
-    // else{
-    //     console.log(radio.prop('checked'));
-    //     radio.prop('checked',false);
-    //     radio.prop('data-prevVal',false);
-    // }
-    // e.preventDefault();
     $('.faq__checkbox').not(checkbox).prop('checked',false);
 })
 
@@ -27,12 +24,17 @@ $('.plugin-select select').select2({
 });
 
 $('.feedback').owlCarousel({
-    items: 2,
+    items: 1,
     dots: false,
     margin: 40,
     nav:true,
     navContainer: '.feedback__controls',
-    navText: ''
+    navText: '',
+    responsive: {
+        850: {
+            items: 2
+        }
+    }
     // navElement: 'button'
 });
 
