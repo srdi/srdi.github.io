@@ -420,7 +420,7 @@ html {
   color: #3c3c3b;
   line-height: 1.4; }
 
-div, nav, input {
+div, nav, input, textarea {
   box-sizing: border-box; }
 
 ul {
@@ -434,6 +434,12 @@ a {
 
 img {
   max-width: 100%; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: inherit; }
+
+input::placeholder, textarea::placeholder {
+  color: inherit; }
 
 .container {
   width: 1000px;
@@ -495,8 +501,7 @@ img {
     font-weight: 500; }
 
 .form {
-  margin: 0 -6px;
-  padding-top: 22px; }
+  margin: 0 -6px; }
   .form-group {
     float: left;
     padding: 0 6px;
@@ -511,7 +516,7 @@ img {
     .form-group__label {
       display: block;
       margin-bottom: .6rem; }
-    .form-group__input, .form-group__select {
+    .form-group__input, .form-group__select, .form-group__textarea {
       width: 100%;
       height: 3.5rem;
       border: 1px solid #dadada;
@@ -519,10 +524,10 @@ img {
       padding-left: 1rem;
       font-size: 1.14rem;
       color: #3c3c3b; }
-      .form-group__input::-webkit-input-placeholder, .form-group__select::-webkit-input-placeholder {
-        color: inherit; }
-      .form-group__input::placeholder, .form-group__select::placeholder {
-        color: inherit; }
+    .form-group__textarea {
+      height: auto;
+      padding-top: 1rem;
+      resize: none; }
     .form-group__select {
       -webkit-appearance: none;
               appearance: none;
@@ -690,6 +695,10 @@ img {
     font-weight: 300;
     font-size: 1.2rem;
     margin-bottom: 3rem; }
+  .section__hr {
+    border: 0;
+    border-top: 1px solid #dadada;
+    margin: 22px 0; }
   .section:nth-child(odd) {
     background: #f6f6f6; }
   .section--features {
@@ -852,9 +861,13 @@ img {
   .details__text {
     font-size: 1.14rem;
     line-height: 1.5;
-    padding-bottom: 2rem;
-    margin-bottom: 0;
-    border-bottom: 1px solid #dadada; }
+    margin-bottom: 0; }
+
+.contact {
+  font-weight: 500;
+  font-size: 1.14rem; }
+  .contact__address {
+    font-weight: normal; }
 
 .features {
   margin: 0 -12px;
