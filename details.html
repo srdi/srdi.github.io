@@ -17,7 +17,7 @@
     <header class="header">
         <div class="container">
             <div class="clearfix">
-                <div class="header-logo pull-left">
+                <div class="header__logo pull-left">
                     <img src="img/logo.png" alt="Logo">
                 </div>
                 <nav class="pull-right header-nav">
@@ -88,246 +88,82 @@
         <a href="#" class="btn btn-green btn-get-started mobile-nav__get-started">Get started</a>
     </nav>
     <main>
-        <section class="main-section">
-            <div class="container">
-                <div class="main-section__center">
-                    <h1 class="main-section__title">Import products directly<br>into your webshop
-                    </h1>
-                    <p class="main-section__text">Create an account for your own ecommerce webshop by clicking on “get started”
-                        or download the plug-in by selecting the webshop software of your choice.</p>
 
-                    <form class="start-form clearfix">
-                        <div class="start-form__left">
-                            <div class="form-group start-form__get-started">
-                                <label>Create account</label>
-                                <a href="#" class="btn btn-green btn-get-started">Get started</a>
-                            </div>
-                            <div class="start-form__line-or"></div>
-                            <div class="form-group plugin-select">
-                                <label>Download plug-in</label>
-                                <select>
-                                    <option value="lightspeed" data-img="img/lightspeed-icon.png">Lightspeed</option>
-                                    <option value="lightspeed" data-img="img/lightspeed-icon.png">Lightspeed</option>
-                                </select>
-                            </div>
-                        </div><!-- comment to remove invisible inline-block margins(spaces)
-                        --><button class="btn btn-green start-form__download"></button>
-                    </form>
-                </div>
-
-                <div class="usp">
-                    <div class="usp__item">
-                        <img src="img/usp/time-saving.png" alt="Clock icon">
-                        <h3 class="usp__title">Time Savings</h3>
-                        <p class="usp__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, tempora incidunt.</p>
-                    </div>
-                    <div class="usp__item">
-                        <img src="img/usp/no-stock.png" alt="House icon">
-                        <h3 class="usp__title">No stock required</h3>
-                        <p class="usp__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <div class="usp__item">
-                        <img src="img/usp/direct-shipping.png" alt="Spaceship icon">
-                        <h3 class="usp__title">Direct shipping</h3>
-                        <p class="usp__text"> Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, tempora incidunt ut.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--div is fix for nth-child selector, to remove .main-section from childs-->
-        <div>
-            <section class="section  section--features">
-                <div class="container">
-                    <h2 class="section__title">Features</h2>
-                    <p class="section__description">Luckyfrog provides you with great features to<br>
-                        make your bussiness grows with ease.</p>
-
-                    <div class="features">
-                        <div class="features__col">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <img src="img/features/import.png">
-                                </div>
-                                <h3 class="features__title">Import Products</h3>
-                                <p class="features__text">Easily import products from suppliers
-                                    directly into your store.</p>
-                            </div>
-                        </div>
-                        <div class="features__col">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <img src="img/features/orders-fulfil.png">
-                                </div>
-                                <h3 class="features__title">Fulfil orders automaticly</h3>
-                                <p class="features__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <div class="features__col">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <img src="img/features/auto-price.png">
-                                </div>
-                                <h3 class="features__title">Auto price update</h3>
-                                <p class="features__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <div class="features__col">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <img src="img/features/sales-track.png">
-                                </div>
-                                <h3 class="features__title">Track your sales</h3>
-                                <p class="features__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <div class="features__col">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <img src="img/features/tracking.png">
-                                </div>
-                                <h3 class="features__title">Shipment tracking</h3>
-                                <p class="features__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <div class="features__col">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <img src="img/features/multiaccount.png">
-                                </div>
-                                <h3 class="features__title">Multiple user accounts</h3>
-                                <p class="features__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p><a href="">See all</a> Luckyfrog features</p>
-                </div>
-            </section>
             <section class="section section--default">
                 <div class="container">
-                    <h2 class="section__title">Newest products</h2>
-                    <p class="section__description">Luckyfrog has its products updated daily, you can view some<br>
-                        of the newest products in our favorite categories.</p>
+                    <div class="details section__row clearfix">
+                        <div class="section__col-50">
+                            <h2 class="section__title">Get started</h2>
+                            <p class="details__text">Fill in your info and create your own Luckyfrog account, only
+                                a minute away from starting with your dropship account.</p>
 
-                    <div class="categories categories--big ">
-                        <div class="categories__row clearfix">
-                            <div class="categories__item">
-                                <input type="radio" name="category" id="home-living" checked class="categories__radio">
-                                <label for="home-living" class="categories__label">Home &amp; Living</label>
-                            </div>
-                            <div class="categories__item">
-                                <input type="radio" name="category" id="sport-outdoor" class="categories__radio">
-                                <label for="sport-outdoor" class="categories__label">Sport &amp; Outdoor</label>
-                            </div>
-                            <div class="categories__item">
-                                <input type="radio" name="category" id="glasses" class="categories__radio">
-                                <label for="glasses" class="categories__label">Glasses</label>
-                            </div>
-                            <div class="categories__item">
-                                <input type="radio" name="category" id="watches" class="categories__radio">
-                                <label for="watches" class="categories__label">Watches</label>
-                            </div>
-                            <div class="categories__item">
-                                <input type="radio" name="category" id="jewelery" class="categories__radio">
-                                <label for="jewelery" class="categories__label">Jewelery</label>
-                            </div>
-                            <div class="categories__item">
-                                <a href="#" class="categories__more">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products products--new">
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/phone-mount.jpg" class="products__img">
-                                <p class="products__name">Universal phone mount</p>
-                                <p class="products__sold"><span>5.591</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/camera-strap.jpg" class="products__img">
-                                <p class="products__name">Trendy camera straps</p>
-                                <p class="products__sold"><span>1.219</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/pocketlight.jpg" class="products__img">
-                                <p class="products__name">2000 lumen pocketlight</p>
-                                <p class="products__sold"><span>3.822</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/monocular.jpg" class="products__img">
-                                <p class="products__name">Monocular 52x16 S-Edition</p>
-                                <p class="products__sold"><span>977</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/monocular.jpg" class="products__img">
-                                <p class="products__name">Monocular 52x16 S-Edition</p>
-                                <p class="products__sold"><span>977</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/pocketlight.jpg" class="products__img">
-                                <p class="products__name">2000 lumen pocketlight</p>
-                                <p class="products__sold"><span>3.822</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/camera-strap.jpg" class="products__img">
-                                <p class="products__name">Trendy camera straps</p>
-                                <p class="products__sold"><span>1.219</span> sold</p>
-                            </div>
-                        </div>
-                        <div class="products__col">
-                            <div class="products__item">
-                                <img src="img/products/phone-mount.jpg" class="products__img">
-                                <p class="products__name">Universal phone mount</p>
-                                <p class="products__sold"><span>5.591</span> sold</p>
-                            </div>
-                        </div>
-                    </div>
+                            <form action="" class="form">
+                                <div class="form-group form-group--md">
+                                    <input type="text" class="form-group__input" placeholder="First name">
+                                </div>
+                                <div class="form-group form-group--md">
+                                    <input type="text" class="form-group__input" placeholder="Last name">
+                                </div>
+                                <div class="form-group form-group--lg">
+                                    <input type="text" class="form-group__input" placeholder="Company name">
+                                </div>
+                                <div class="form-group  form-group--lg">
+                                    <p class="form-group__site">.luckyfrog.hk</p>
+                                    <input type="text" class="form-group__input" placeholder="Company name">
+                                </div>
+                                <div class="form-group  form-group--md form-group--mob-lg">
+                                    <input type="text" class="form-group__input" placeholder="Street name">
+                                </div>
+                                <div class="form-group  form-group--sm">
+                                    <input type="text" class="form-group__input" placeholder="Numer">
+                                </div>
+                                <div class="form-group  form-group--sm">
+                                    <input type="text" class="form-group__input" placeholder="Suffix">
+                                </div>
+                                <div class="form-group  form-group--md">
+                                    <input type="text" class="form-group__input" placeholder="Zip code">
+                                </div>
+                                <div class="form-group  form-group--md">
+                                    <input type="text" class="form-group__input" placeholder="City">
+                                </div>
+                                <div class="form-group form-group--md">
+                                    <select name="" class="form-group__select">
+                                        <option value="">Netherlands</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-group--md">
+                                    <input type="text" class="form-group__input" placeholder="Phone number">
+                                </div>
+                                <div class="form-group form-group--lg">
+                                    <input type="text" class="form-group__input" placeholder="Emailaddress">
+                                </div>
 
-                    <p><a href="">See more</a> Luckyfrog products & categories</p>
-                </div>
-            </section>
-            <section class="section section--default">
-                <div class="container">
-                    <h2 class="section__title">Trusted by people like you!</h2>
-                    <div class="feedback__container">
-                        <div class="feedback__controls"></div>
-                        <div class="feedback owl-carousel">
-                            <div>
-                                <blockquote class="feedback__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</blockquote>
-                                <div class="feedback__user">
-                                    <img src="img/gigi.png" class="feedback__avatar">
-                                    <p>Gigi Hadi, <span class="feedback__site">Geometric-jewelry.com</span></p>
+                                <div class="form-group form-group--lg">
+                                    <button class="btn btn-green form__btn">Start using Luckyfrog</button>
                                 </div>
-                            </div>
-                            <div>
-                                <blockquote class="feedback__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat.</blockquote>
-                                <div class="feedback__user">
-                                    <img src="img/gigi.png" class="feedback__avatar">
-                                    <p>Gigi Hadi, <span class="feedback__site">Geometric-jewelry.com</span></p>
+                            </form>
+
+                        </div>
+
+                        <div class="section__col-50">
+                            <h2 class="section__title">Benefits</h2>
+                            <p class="details__text">Everything you need to succeed! Here are some reminders why
+                                Luckyfrog is your best choice today.</p>
+                            <div class="usp usp--details">
+                                <div class="usp__item">
+                                    <img src="img/usp/time-saving.png" alt="Clock icon" class="usp__icon">
+                                    <h3 class="usp__title">Time Savings</h3>
+                                    <p class="usp__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, tempora incidunt.</p>
                                 </div>
-                            </div>
-                            <div>
-                                <blockquote class="feedback__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</blockquote>
-                                <div class="feedback__user">
-                                    <img src="img/gigi.png" class="feedback__avatar">
-                                    <p>Gigi Hadi, <span class="feedback__site">Geometric-jewelry.com</span></p>
+                                <div class="usp__item">
+                                    <img src="img/usp/no-stock.png" alt="House icon" class="usp__icon">
+                                    <h3 class="usp__title">No stock required</h3>
+                                    <p class="usp__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                                <div class="usp__item">
+                                    <img src="img/usp/direct-shipping.png" alt="Spaceship icon" class="usp__icon">
+                                    <h3 class="usp__title">Direct shipping</h3>
+                                    <p class="usp__text"> Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, tempora incidunt ut.</p>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +247,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+
     </main>
     <footer class="footer">
         <div class="container">
