@@ -11,6 +11,7 @@ $('.js-menu-hide').click(function() {
 });
 
 
+
 $('.faq__label').click(function(e) {
     var checkbox = $(this).siblings('.faq__checkbox');
     $('.faq__checkbox').not(checkbox).prop('checked',false);
