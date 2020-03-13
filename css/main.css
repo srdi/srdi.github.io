@@ -1,0 +1,261 @@
+/* ------ Спецификация ------ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #404048;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0em;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+a,
+button,
+input {
+    transition: all 0.5s ease;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/*============ burgers ==============*/
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham8 .top {
+    stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.ham8.active .top {
+    stroke-dashoffset: -64px;
+}
+
+.ham8.active .middle {
+    //stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+}
+
+.ham8.active .bottom {
+    stroke-dashoffset: -64px;
+}
+
+.mob-block {
+    display: none !important;
+}
+
+/*============== end ===============*/
+.header {
+    background: url(../img/Background.png) no-repeat center center / cover;
+    height: 540px;
+}
+
+.header__wrapper {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__wrapper-logo {
+    width: 100%;
+    max-width: 320px;
+}
+
+#logoipsum {
+    max-width: 440px;
+    margin-top: -43px;
+    margin-left: 42px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    padding-bottom: 54px;
+}
+
+.nav li a {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.header__wrapper .header__wrapper-left {
+    justify-content: flex-end;
+    margin-left: 25px;
+}
+
+.header__wrapper-left li {
+    margin-left: 77px;
+}
+
+.header__wrapper .header__wrapper-right {
+    margin-left: -15px;
+}
+
+.header__wrapper-right li {
+    margin-right: 94px;
+}
+
+.header__title {
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 98px;
+    color: #fff;
+    text-align: center;
+    margin-top: 123px;
+    padding-right: 13px;
+    letter-spacing: -.023em;
+}
+
+/* content */
+.content {
+    padding-top: 102px;
+    padding-bottom: 90px;
+}
+
+.content .container {
+    max-width: 1630px;
+}
+
+.content h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 98px;
+    letter-spacing: -.025em;
+    color: #333333;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.content h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 98px;
+    letter-spacing: -.023em;
+    color: #333333;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: -44px;
+}
+
+.mob-content__text {
+    display: none;
+}
+
+.content__img {
+    padding-top: 70px;
+}
+
+.content__img img {
+    max-width: 500px;
+}
+
+.content__img>div:nth-child(2) {
+    padding-left: 32px;
+}
+
+.content__img>div:nth-child(3) {
+    padding-left: 35px;
+}
