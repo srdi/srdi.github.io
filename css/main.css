@@ -143,7 +143,7 @@ body {
 
 /*============== end ===============*/
 .header {
-    background: url(../img/Background.png) no-repeat center center / cover;
+    background: url(../img/Background.jpg) no-repeat center 0 / cover;
     height: 540px;
 }
 
